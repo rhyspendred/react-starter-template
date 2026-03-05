@@ -1,12 +1,11 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react-swc'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [
-    react(),
-    tailwindcss()
-  ],
-  // This must be JUST the repository name, nothing else
-  base: '/react-test-vibe/', 
+plugins: [
+react(),
+tailwindcss()
+],
+base: '/react-starter-template/',
 })
